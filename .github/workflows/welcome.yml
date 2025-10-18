@@ -8,6 +8,9 @@ jobs:
   Welcome:
     runs-on: ubuntu-latest
     steps:
-      -name: Echo Welcome
+    - run: gh pr comment "$PR_UR" --body "Welcome to repository"
+    env: 
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      PR_URL: ${{github.event.pull_request.html_url}}
 
     
