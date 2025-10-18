@@ -1,0 +1,9 @@
+name: Post welcome comment
+on: 
+  pull_request:
+    types:[opened]
+jobs:
+  Welcome:
+    steps:
+      -name: Echo Welcome
+    
