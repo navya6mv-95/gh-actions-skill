@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: Echo Welcome
+permissions:
+  pull-requests: write
     
