@@ -2,11 +2,12 @@ name: Post welcome comment
 on: 
   pull_request:
     types:[opened]
+permissions:
+  pull-requests: write
 jobs:
   Welcome:
     runs-on: ubuntu-latest
     steps:
       -name: Echo Welcome
-permissions:
-  pull-requests: write
+
     
